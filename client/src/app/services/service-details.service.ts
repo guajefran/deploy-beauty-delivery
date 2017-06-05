@@ -3,8 +3,10 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http'
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/catch'
 import { Observable } from 'rxjs/Rx'
+import { environment }  from '../../environments/environment';
 
-const BASEURL = "http://localhost:3000/service-details"
+const BASEURL:string= environment.BASE_URL+"/service-details/";
+
 
 @Injectable()
 export class ServiceDetailsService {
