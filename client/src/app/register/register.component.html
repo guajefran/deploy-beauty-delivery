@@ -1,0 +1,48 @@
+
+
+<h1> REGISTER </h1>
+<div class="box">
+<form>
+
+  <span class="glyphicon glyphicon-user"></span><label>  Username </label>
+  <input type="text" [(ngModel)]="formInfo.username" name="username"/>
+  <br>
+  <span class="glyphicon glyphicon-lock"></span><label> Password </label>
+  <input type="password" [(ngModel)]="formInfo.password" name="password"/>
+  <br>
+  <span class="glyphicon glyphicon-envelope"></span><label> Email </label>
+  <input type="email" [(ngModel)]="formInfo.email" name="email"/>
+  <br>
+
+  <label> Perfil </label>
+  <br>
+  <div class="radios row">
+    <div class="radio1 col-sm-6">
+      <input type="radio" [(ngModel)]="formInfo.role" name="seleccionable" value="professional">
+      <label>profesional</label>
+    </div>
+    <div class="radio2 col-sm-6">
+      <input type="radio" [(ngModel)]="formInfo.role"name="seleccionable" value="user">
+      <label>user</label>
+      </div>
+  </div>
+  <br>
+
+  <button routerLink="/login">Go to Login</button>
+  <button (click)="signup()"> Signup </button>
+</form>
+</div>
+<p class="error"> {{ error }} </p>
+
+
+
+
+  <!-- <p *ngIf="privateData"> Here's some data fetched from a protected API </p>
+  <pre> {{ privateData | json }} </pre> -->
+
+  <!-- <button (click)="logout()"> logout </button>
+  <button (click)="getPrivateData()"> Get private data </button>
+</div>
+
+<button routerLink="/list-services">services</button>
+<button routerLink="/panel-prof">cpanel</button> -->

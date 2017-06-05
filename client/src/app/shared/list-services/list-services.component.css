@@ -1,0 +1,28 @@
+.not-active {
+  display: none;
+}
+
+.list-services {
+  width: 100%;
+text-align: center;
+}
+
+.list-services .services {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.list-services > .row {
+  width: 50%;
+  margin: 0 auto;
+
+}
+.services2{
+
+}
+.my-class {
+  position: absolute;
+  left: 40px;
+  margin: 0px 0px 0px 80px;
+  text-align: left;
+}

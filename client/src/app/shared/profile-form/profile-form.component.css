@@ -1,0 +1,22 @@
+form{
+  margin-left: 15px;
+
+
+}
+.box{
+  padding: 20px;
+  width: 96%;
+  height: 50%;
+  margin-left: 15px;
+  border-bottom: 1px solid #000;
+}
+input{
+  width: 100%;
+}
+button{
+  background-color: #000;
+  border-radius: 5px;
+  margin:auto;
+  border: none;
+  color: #fff;
+}

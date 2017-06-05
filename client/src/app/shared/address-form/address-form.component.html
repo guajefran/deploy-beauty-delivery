@@ -1,0 +1,17 @@
+<section>
+<div class="box">
+  <form [formGroup]="addressForm" (ngSubmit)="onSubmit(addressForm.value)">
+    <div class="col-sm-12">
+      <label for="">Dirección</label>
+      <input autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search />
+      <button type="submit">SAVE</button>
+    </div>
+        <div class="col-sm-12 map">
+          <sebm-google-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+            <sebm-google-map-marker [latitude]="latitude" [longitude]="longitude"></sebm-google-map-marker>
+          </sebm-google-map>
+        </div>
+  </form>
+</div>
+
+</section>

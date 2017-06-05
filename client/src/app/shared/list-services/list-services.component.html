@@ -1,0 +1,16 @@
+<section class="list-services">
+  <div class="row">
+    <div class="services" [ngClass]="{'my-class': isClassVisible }">
+      <div *ngFor="let category of categories" class="listElement">
+        <h2 (click)="showServices(category.category)">{{ category.category}}</h2>
+      </div>
+    </div>
+    <div class="services">
+      <div *ngFor="let service of services" class="listElement">
+        <h3 *ngIf="activatedCategory == service.category"   (click)="setService(service._id)" data-target="#flipFlop" data-toggle="modal" class="{{ service.category }}"> {{ service.name }} </h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <button routerLink="/view-profesional">view</button> -->

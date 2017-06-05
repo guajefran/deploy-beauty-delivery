@@ -1,0 +1,22 @@
+  <header id="main-header">
+    <div class="logo">
+      <a id="logo-header" href="#">
+        <img src="assets/images/logo1.png">
+      </a>
+    </div>
+
+    <nav>
+      <div *ngIf="loggedUser" class="user">
+        <p> Que hay de nuevo {{ loggedUser.username }} </p>
+        <button (click)="logout()"> logout </button>
+      </div>
+		</nav>
+
+    <div class="login" *ngIf="!loggedUser">
+      <a [routerLink]="['/login']">login</a>
+    </div>
+
+	<!-- / nav -->
+
+	</header>
+<router-outlet></router-outlet>

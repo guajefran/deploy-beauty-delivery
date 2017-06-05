@@ -1,0 +1,32 @@
+<h1>Reserva</h1>
+<div class="box">
+
+  <form>
+  <label> Selecciona la fecha en la que quieres que te visiten </label>
+  <br>
+  <input type="date" [(ngModel)]="formInfo.username" name="username"/>
+  <br>
+  <label>¿A que hora te viene mejor? </label>
+  <input type="time" [(ngModel)]="formInfo.password" name="password"/>
+  <br><br>
+
+</form>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  RESERVAR YA!!
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="modalLabel">Su reserva se ha efectua satisfactoriamente</h4>
+      </div>
+      <div class="modal-body">
+        <p>Gracias!! por confiar en Beauty Delivery</p>
+      </div>
+    </div>
+  </div>
+</div>

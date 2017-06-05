@@ -1,0 +1,121 @@
+body{
+  margin: 0 0 0 0;
+  background-image: url("/assets/images/fondo.jpg");
+  font-family:"alsandra";
+
+}
+@font-face {
+    font-family: "tipetext";
+    src: url(/assets/text/copperplatecondensedssiboldcondensed.ttf) format("truetype");
+    font-family:"alsandra";
+    src: url(/assets/text/alsandra.ttf) format("truetype");
+    font-family: "kasa";
+    src: url(/assets/text/karinshandregular.ttf) format("truetype");
+}
+#main-header {
+	background: #000;
+  box-shadow: 0 0 20px 0 black;
+	color: white;
+	height: 50px;
+  position: relative;
+
+
+}
+	/*#main-header a {
+		color: white;
+	}*/
+
+/*
+ * Logo
+ */
+#logo-header {
+	text-align: center;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+  width: 250px;
+  height: 50px;
+
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+
+	#logo-header .site-name {
+		display: block;
+		font-weight: 400;
+		font-size: 1.5em;
+	}
+
+
+
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+  position: relative;
+  display: inline;
+  font-family:"alsandra";
+  font-size: 25px;
+  padding-top: 12px;
+}
+
+
+pre{
+  position: absolute;
+}
+
+  .header-user-link {
+    font-size: 14px;
+    padding: 0px;
+    margin: 5px 5px 0px 5px;
+    display: inline;
+  }
+
+  .header-user-link:hover {
+    font-size: 14px;
+    padding: 0px 7px;
+    margin: 5px 5px 0px 5px;
+    display: inline;
+  }
+
+.loggedUser{
+    float: right;
+    color: red;
+    position: absolute;
+    font-family:"alsandra";
+
+  }
+
+.login a{
+  color: #F7AAF2;
+  float: right;
+  padding: 18px 20px 0 0;
+  font-family:"alsandra";
+  font-size: 20px;
+
+
+
+}
+.logo{
+  float: left;
+
+}
+.user{
+  float:right;
+    display: inline;
+
+}
+pre{
+  float: right;
+  color: red;
+}
+p{
+  display: inline;
+}
+button{
+  color: #F7AAF2;
+  background-color: transparent !important;
+  border: none;
+}

@@ -1,0 +1,16 @@
+<section>
+<div class="box">
+
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm.value)">
+    <p>
+      <label for="">Nombre de la tienda</label>
+      <input type="text" placeholder="Peluquerias Paquita" [formControl]="profileForm.controls['company']"/>
+    </p>
+    <p>
+      <label for="">Descripción</label>
+      <input type="text" placeholder="Te irás guapa, peinada y bien fresquita"[formControl]="profileForm.controls['description']"/>
+    </p>
+    <button type="submit">Guardar</button>
+  </form>
+</div>
+</section>

@@ -1,0 +1,46 @@
+h1{
+  text-align: center;
+}
+.box{
+  background-image: url("/assets/images/fondo.jpg");
+  margin:auto;
+  text-align: center;
+  padding: 20px;
+  width: 40vw;
+  border-radius: 10px;
+  height: 50%;
+
+
+}
+button{
+  background-color: #000;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 0 15px 0 pink;
+  border: none;
+  padding: 200px;
+  color: #fff;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    padding: 10px;
+    color: #000;
+}
+button{
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  padding: 10px;
+
+}
+input{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 80%;
+}

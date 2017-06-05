@@ -1,0 +1,14 @@
+<section>
+  <ul>
+    <li *ngFor="let detail of servicesWithDetails">
+      <h6>DATOS EMPRESA</h6>
+      <p>{{ detail.professional.email }}</p>
+      <p *ngIf="detail.profile">{{ detail.profile.company }}</p>
+      <p *ngIf="detail.profile">{{ detail.profile.description }}</p>
+      <br>
+      <p>descripcion: {{detail.description}}</p>
+      <p>tiempo: {{detail.time}}</p>
+      <p>precio: {{detail.price}} €</p>
+    </li>
+  </ul>
+</section>

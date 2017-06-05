@@ -1,0 +1,17 @@
+  <h1> LOGIN </h1>
+<div class="box">
+
+  <form>
+  <span class="glyphicon glyphicon-user"></span><label> Username </label>
+  <input type="text" [(ngModel)]="formInfo.username" name="username"/>
+  <br>
+  <span class="glyphicon glyphicon-lock"></span><label> Password </label>
+  <input type="password" [(ngModel)]="formInfo.password" name="password"/>
+  <br><br>
+
+  <button (click)="login()"> login </button>
+  <br>
+
+  <button type="button" routerLink="/register">Create a count</button>
+</form>
+</div>

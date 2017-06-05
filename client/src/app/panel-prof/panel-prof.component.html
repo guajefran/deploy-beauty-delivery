@@ -1,0 +1,67 @@
+  <h1>PANEL  PROFESIONAL</h1>
+  <div class="boxprof row">
+  <div class="col-sm-12">
+    <!-- <div class="col-sm-1"></div> -->
+    <div class="col-sm-6">
+      <app-profile-form></app-profile-form>
+      <app-address-form></app-address-form>
+    </div>
+    <div class="col-sm-6 photo">
+
+  <p>Puedes subir fotos de tus trabajos de tus trabajos</p>
+  <p>haz click en las cámaras</p>
+
+  <div class="col-sm-12 boxphotos">
+    <a href="javascript:void(0)" class="col-sm-4 btn-file grow img-container">
+      <img class="image-block" src="assets/images/photo.png">
+      <input type="file" name="picField" id="picField" size="14" (change)="updateImage($event)" alt=""/>
+    </a>
+    <a href="javascript:void(0)" class="col-sm-4 btn-file grow">
+      <img class="image-block" src="assets/images/photo.png">
+      <input type="file" name="picField" id="picField" size="24" (change)="updateImage($event)" alt=""/>
+    </a>
+    <a href="javascript:void(0)" class="col-sm-4 btn-file grow">
+      <img class="image-block" src="assets/images/photo.png">
+      <input type="file" name="picField" id="picField" size="24" (change)="updateImage($event)" alt=""/>
+    </a >
+    <a href="javascript:void(0)" class="col-sm-4 btn-file grow">
+      <img class="image-block" src="assets/images/photo.png">
+      <input type="file" name="picField" id="picField" size="24" (change)="updateImage($event)" alt=""/>
+    </a >
+    <a href="javascript:void(0)" class="col-sm-4 btn-file grow">
+      <img class="image-block" src="assets/images/photo.png">
+      <input type="file" name="picField" id="picField" size="24" (change)="updateImage($event)" alt=""/>
+    </a >
+    <a href="javascript:void(0)" class="col-sm-4 btn-file grow">
+      <img class="image-block" src="assets/images/photo.png">
+      <input type="file" name="picField" id="picField" size="24" (change)="updateImage($event)" alt=""/>
+    </a >
+  </div>
+</div>
+</div>
+</div>
+<div class="panelprof2">
+  <p>Añade los servicios por los que quieres que te encuentren</p>
+
+</div>
+
+<br><br>
+
+<div class="categories row">
+  <div class="col-sm-4 services-container">
+    <app-list-services></app-list-services>
+  </div>
+  <div class="col-sm-4">
+    <app-service-details-form></app-service-details-form>
+
+  </div>
+  <!-- <div class="col-sm-4">
+    <app-professional-services></app-professional-services>
+  </div> -->
+</div>
+  <!-- <h2>Upload your photo</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="text" name="name">
+    <input type="file" name="photo">
+    <input type="submit" value="Save">
+  </form> -->
