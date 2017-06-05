@@ -27,7 +27,6 @@ import { AddressesService } from './services/addresses.service'
 import { ProfilesService } from './services/profiles.service'
 import { ServicesToDetailsService } from './services/services-to-details.service'
 import { ProfessionalProfileService  } from './services/professional-profile.service'
-import { FileSelectDirective } from "ng2-file-upload";
 // External components
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { ProfessionalServicesComponent } from './shared/professional-services/professional-services.component';
@@ -61,7 +60,6 @@ const routes: Routes = [
     ProfileFormComponent,
     AddressFormComponent,
     ProfessionalServicesComponent,
-    FileSelectDirective,
     UserResultsComponent
 
   ],

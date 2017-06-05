@@ -11,6 +11,8 @@ const users = require('./routes/users')
 const address = require('./routes/AddressRoutes')
 const profiles = require('./routes/ProfileRoutes')
 
+require('dotenv').load()
+
 const app = express()
 
 require('./config/passport')(passport)

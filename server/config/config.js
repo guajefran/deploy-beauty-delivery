@@ -2,6 +2,6 @@ const path = require('path')
 const rootPath = path.normalize(__dirname+'/../')
 
 module.exports = {
-  db: 'mongodb://localhost/beauty-delivery',
+  db: process.env.DB_URL,
   rootPath: rootPath
 }

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageReserveComponent implements OnInit {
   date: any
+  formInfo: any;
   constructor() { }
 
   ngOnInit() {
