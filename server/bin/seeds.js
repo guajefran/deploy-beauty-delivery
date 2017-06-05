@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 let Service = require('../models/ServiceModel.js')
 const servicesData = require('./data/services.js')
 
-mongoose.connect('mongodb://localhost/beauty-delivery')
+mongoose.connect(process.env.DB_URL)
 
 Service.collection.drop()
 
